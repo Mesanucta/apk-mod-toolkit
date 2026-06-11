@@ -1,6 +1,6 @@
 # APK 修改自动化工具
 
-一个自动化的 Android APK 修改工具链，支持解包、修改、重打包和签名。本项目使用 APKTool 对 Android 应用进行逆向工程实践。
+本项目是课程随堂练习项目，使用 APKTool 对 Android APK 进行解包、修改、重打包和签名的自动化实践。
 
 ## 功能特性
 
@@ -47,14 +47,7 @@ apk-mod-project/
 
 ## 快速开始
 
-### 1. 克隆仓库
-
-```bash
-git clone https://github.com/your-username/apk-mod-toolkit.git
-cd apk-mod-toolkit
-```
-
-### 2. 配置修改内容
+### 1. 配置修改内容
 
 编辑 `mods/config.json` 文件，定义你想要的修改：
 
@@ -74,7 +67,7 @@ cd apk-mod-toolkit
 }
 ```
 
-### 3. 执行修改
+### 2. 执行修改
 
 **一键执行所有步骤：**
 
@@ -92,7 +85,7 @@ bash scripts/04-sign.sh       # 签名
 bash scripts/05-verify.sh     # 验证
 ```
 
-### 4. 获取结果
+### 3. 获取结果
 
 修改后的 APK 位于 `output/signed.apk`，可以直接安装到 Android 设备。
 
@@ -191,34 +184,14 @@ A: 脚本会自动重新生成密钥库。注意：新密钥生成的签名与�
 
 ### 签名说明
 
-本项目使用调试签名（debug keystore），仅适用于：
-- ✅ 个人学习和测试
-- ✅ 开发环境调试
-- ❌ **不适用于生产环境或分发**
+本项目使用调试签名（debug keystore），仅用于学习和测试。
 
-## 安全警告
+## 技术说明
 
-⚠️ **重要提示：**
+**测试 APK:** Fossify Notes v1.7.0（开源应用）
 
-- 本工具仅用于学习和研究目的
-- 不要修改和分发他人的商业应用
-- 不要用于任何非法用途
-- 遵守软件版权和相关法律法规
+**工具链:**
+- APKTool 2.11.1 - APK 反编译和重打包
+- Java keytool/jarsigner - 签名工具
+- aapt - APK 信息提取（可选）
 
-## 许可证
-
-本项目采用 MIT 许可证。详见 [LICENSE](LICENSE) 文件。
-
-## 贡献
-
-欢迎提交 Issue 和 Pull Request！
-
-## 作者
-
-- 项目作者：[Your Name]
-- 项目仓库：https://github.com/your-username/apk-mod-toolkit
-
-## 致谢
-
-- [APKTool](https://apktool.org/) - APK 逆向工程工具
-- [Fossify Notes](https://github.com/FossifyOrg/Notes) - 被测试的开源应用
