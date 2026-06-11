@@ -35,7 +35,7 @@ curl -L -o apktool_2.11.1.jar https://github.com/iBotPeaches/Apktool/releases/do
 
 ```bash
 # 方法 1: 放在项目根目录（默认文件名）
-cp your-app.apk notes-13-foss-release.apk
+cp your-downloaded-app.apk your-app.apk
 
 # 方法 2: 使用环境变量指定任意 APK
 export APK_FILE=/path/to/your-app.apk

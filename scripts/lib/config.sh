@@ -10,7 +10,7 @@ PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 APKTOOL_JAR="$PROJECT_ROOT/apktool_2.11.1.jar"
 
 # 文件路径 - 支持通过环境变量指定 APK
-ORIGINAL_APK="${APK_FILE:-$PROJECT_ROOT/notes-13-foss-release.apk}"
+ORIGINAL_APK="${APK_FILE:-$PROJECT_ROOT/your-app.apk}"
 
 # 输出目录
 OUTPUT_DIR="$PROJECT_ROOT/output"
