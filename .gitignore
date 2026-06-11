@@ -2,6 +2,10 @@
 output/
 *.log
 
+# 大文件和二进制文件
+apktool_*.jar
+*.apk
+
 # 密钥库
 keystore/*.keystore
 keystore/*.jks

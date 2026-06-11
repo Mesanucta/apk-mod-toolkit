@@ -14,7 +14,26 @@
 
 - **Java** 17 或更高版本
 - **Git Bash** (Windows) 或 **Bash** (Linux/macOS)
-- **APKTool** 2.11.1（已包含在项目中）
+
+## 准备工作
+
+### 1. 下载 APKTool
+
+下载 [APKTool 2.11.1](https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar) 并放在项目根目录。
+
+```bash
+# Linux/macOS
+wget https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar
+
+# Windows (PowerShell)
+curl -L -o apktool_2.11.1.jar https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar
+```
+
+### 2. 准备测试 APK
+
+将待修改的 APK 文件命名为 `notes-13-foss-release.apk` 并放在项目根目录。
+
+测试 APK 可使用：[Fossify Notes v1.7.0](https://github.com/FossifyOrg/Notes/releases/download/v1.7.0/notes-13-foss-release.apk)
 
 可选工具（用于更详细的验证）：
 - `aapt` - Android Asset Packaging Tool
