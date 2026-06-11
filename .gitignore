@@ -1,0 +1,19 @@
+# 输出目录
+output/
+*.log
+
+# 密钥库
+keystore/*.keystore
+keystore/*.jks
+!keystore/README.md
+
+# 临时文件
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml

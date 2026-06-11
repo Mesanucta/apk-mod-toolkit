@@ -1,0 +1,13 @@
+{
+  "app_info": {
+    "new_version_name": "1.7.0-modded",
+    "new_version_code": "14"
+  },
+  "strings": {
+    "app_launcher_name": "Notes Mod",
+    "app_name": "Fossify Notes Modified"
+  },
+  "manifest": {
+    "debuggable": "true"
+  }
+}
