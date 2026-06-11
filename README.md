@@ -31,9 +31,16 @@ curl -L -o apktool_2.11.1.jar https://github.com/iBotPeaches/Apktool/releases/do
 
 ### 2. 准备测试 APK
 
-将待修改的 APK 文件命名为 `notes-13-foss-release.apk` 并放在项目根目录。
+将待修改的 APK 文件放在项目根目录，或使用环境变量指定路径：
 
-测试 APK 可使用：[Fossify Notes v1.7.0](https://github.com/FossifyOrg/Notes/releases/download/v1.7.0/notes-13-foss-release.apk)
+```bash
+# 方法 1: 放在项目根目录（默认文件名）
+cp your-app.apk notes-13-foss-release.apk
+
+# 方法 2: 使用环境变量指定任意 APK
+export APK_FILE=/path/to/your-app.apk
+bash scripts/run-all.sh
+```
 
 可选工具（用于更详细的验证）：
 - `aapt` - Android Asset Packaging Tool
